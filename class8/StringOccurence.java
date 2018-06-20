@@ -6,7 +6,7 @@ class StringOccurence{
 	Scanner sc =new Scanner(System.in);
 	String ptr=sc.nextLine();
 	String ptr1=sc.nextLine();
-	if(ptr.equals(ptr1)==true)
+	if(ptr.contains(ptr1)==true)
 	{
 
 System.out.println("ptr contains ptr1");
