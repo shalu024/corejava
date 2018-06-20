@@ -19,10 +19,11 @@ String rd;
 
 while((rd = brs.readLine()) != null){
 System.out.print(rd);
-bos.write(rd);	
+bos.write(rd);
+}	
 bos.flush();
 
-}
+
 
 
 }
