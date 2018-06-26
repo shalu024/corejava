@@ -1,12 +1,10 @@
 import java.util.*;  
 import java.io.*; 
 
- class Students{  
-int rollno;  
+ class Students{    
 String name;  
 int age;  
-Students(int rollno,String name,int age){  
-this.rollno=rollno;  
+Students(String name,int age){    
 this.name=name;  
 this.age=age;   
 }  
@@ -33,22 +31,22 @@ return st1.name.compareTo(st2.name);
 public static void main(String args[]){  
   
 ArrayList<Students> all=new ArrayList<Students>();  
-all.add(new Students(6316055,"Parineet",18));  
-all.add(new Students(6316066,"Raspreet",20));  
-all.add(new Students(6316062,"Rajni",21));  
+all.add(new Students("Parineet",18));  
+all.add(new Students("Raspreet",20));  
+all.add(new Students("Rajni",21));  
   
 System.out.println("By Name");  
   
 Collections.sort(all,new NameComparator());  
 for(Students st: all){  
-System.out.println(st.rollno+" "+st.name+" "+st.age);  
+System.out.println(st.name+" "+st.age);  
 }  
   
 System.out.println("By age");  
   
 Collections.sort(all,new AgeComparator());  
 for(Students st: all){  
-System.out.println(st.rollno+" "+st.name+" "+st.age);  
+System.out.println(st.name+" "+st.age);  
 }  
   
 }  
